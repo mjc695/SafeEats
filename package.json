@@ -1,0 +1,28 @@
+{
+  "name": "safeeats",
+  "version": "1.0.0",
+  "description": "Practice for building a full stack web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test",
+    "start": "nodemon server",
+    "seed": "seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjc695/SafeEats.git"
+  },
+  "author": "Monferd Collin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjc695/SafeEats/issues"
+  },
+  "homepage": "https://github.com/mjc695/SafeEats#readme",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "pg": "^7.15.1",
+    "sequelize": "^5.21.3",
+    "volleyball": "^1.5.1"
+  }
+}
