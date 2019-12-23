@@ -23,7 +23,7 @@ const User = db.define('user', {
   salt: {
     type: Sequelize.STRING,
     get() {
-      return () => this.data.getDataValue('salt')
+      return () => this.getDataValue('salt')
     }
   }
 })
