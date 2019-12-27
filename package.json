@@ -4,8 +4,11 @@
   "description": "Practice for building a full stack web app",
   "main": "index.js",
   "scripts": {
+    "build-client": "webpack",
+    "build-client-watch": "webpack -w",
     "test": "node test",
     "start": "nodemon server",
+    "start-dev": "npm run build-client-watch & npm run start",
     "seed": "node seed.js"
   },
   "repository": {
@@ -19,8 +22,11 @@
   },
   "homepage": "https://github.com/mjc695/SafeEats#readme",
   "dependencies": {
+    "babel": "^6.23.0",
     "crypto": "^1.0.1",
     "express": "^4.17.1",
+    "install": "^0.13.0",
+    "npm": "^6.13.4",
     "path": "^0.12.7",
     "pg": "^7.15.1",
     "react": "^16.12.0",
@@ -32,6 +38,26 @@
     "volleyball": "^1.5.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "7.0.0-beta.54",
+    "@babel/plugin-proposal-decorators": "7.0.0-beta.54",
+    "@babel/plugin-proposal-export-namespace-from": "7.0.0-beta.54",
+    "@babel/plugin-proposal-function-sent": "7.0.0-beta.54",
+    "@babel/plugin-proposal-json-strings": "7.0.0-beta.54",
+    "@babel/plugin-proposal-numeric-separator": "7.0.0-beta.54",
+    "@babel/plugin-proposal-throw-expressions": "7.0.0-beta.54",
+    "@babel/plugin-syntax-dynamic-import": "7.0.0-beta.54",
+    "@babel/plugin-syntax-import-meta": "7.0.0-beta.54",
+    "@babel/polyfill": "^7.0.0-beta.55",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.0.0-beta.55",
+    "@babel/register": "^7.0.0-beta.55",
+    "axios-mock-adapter": "^1.15.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10"
   }

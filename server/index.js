@@ -13,11 +13,11 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/api', require('./api'))
 
 // static file wearing middlware
-app.use(express.static(path(__dirname, '..', 'public')))
+app.use(express.static(path.join(__dirname, '..', 'public')))
 
 // sends html
 app.use('*', (req, res) => {
-  res.sendFile(path(__dirname, '..', 'public/index.html'))
+  res.sendFile(path.join(__dirname, '..', 'public/index.html'))
 })
 
 app.use((err, req, res, next) => {
