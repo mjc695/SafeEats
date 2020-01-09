@@ -24,8 +24,10 @@
   "dependencies": {
     "axios": "^0.19.0",
     "babel": "^6.23.0",
+    "connect-session-sequelize": "^6.0.0",
     "crypto": "^1.0.1",
     "express": "^4.17.1",
+    "express-session": "^1.17.0",
     "install": "^0.13.0",
     "npm": "^6.13.4",
     "path": "^0.12.7",
