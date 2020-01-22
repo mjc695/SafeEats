@@ -28,10 +28,10 @@ router.post('/login', async function (req, res, next) {
 })
 
 // logging out
-router.post('/login', (req, res) => {
+router.post('/logout', (req, res) => {
   req.logout()
   req.session.destroy()
-
+  res.redirect('/')
 })
 
 // getting current user data (already in cookies so grabs data)
