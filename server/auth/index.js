@@ -4,11 +4,15 @@ const { User } = require('../db/models')
 // logging in
 router.post('/login', async function (req, res, next) {
   try {
+
+    console.log('req.body.password: ', req.body.password)
+    console.log('type ofreq.body.password: ', typeof req.body.password)
     const user = await User.findOne({
       where: {
         email: req.body.email
       }
     })
+    // console.log('IS IT CORRECT?:', user.correctPassword('123'))
     if (!user) {
       console.log('email incorrect')
       res.status(401).send('The user does not exist')

@@ -42,10 +42,10 @@ User.generateSalt = function () {
   return crypto.randomBytes(16).toString('base64')
 }
 
-User.encryptPassword = function (plainnText, salt) {
+User.encryptPassword = function (plainText, salt) {
   return crypto
     .createHash('RSA-SHA256')
-    .update(plainnText)
+    .update(plainText)
     .update(salt)
     .digest('hex')
 }
